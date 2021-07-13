@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha ./test/* --exit"
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": [ "test", "src" ],
+    "testRegex": "\\.test\\.js?$"
   },
   "repository": {
     "type": "git",
