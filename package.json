@@ -9,7 +9,7 @@
   },
   "jest": {
     "verbose": true,
-    "roots": [ "test", "src" ],
+    "roots": [ "test" ],
     "testRegex": "\\.test\\.js?$"
   },
   "repository": {
