@@ -5,9 +5,15 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello Node!\n'
   res.end(msg);
+  done();
 });
 
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);  
+  done();
 });
-done();
+
+  afterAll(async done => {
+    await models.sequelize.close();
+    done();
+  });
