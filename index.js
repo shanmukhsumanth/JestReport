@@ -9,9 +9,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
+  done();
 });
-
-afterAll(async done => {
-  await models.sequelize.close();
-    done();
-  });
