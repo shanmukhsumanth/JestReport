@@ -7,3 +7,4 @@ http.createServer(function (req, res) {
     res.write('Node.js says hello!');
     res.end();
 }).listen(8087)
+knex.destroy()
