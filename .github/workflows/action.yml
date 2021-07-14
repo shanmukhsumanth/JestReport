@@ -33,4 +33,4 @@ jobs:
     - run: npm i express
     #- run: npm i mocha supertest --save-dev
     - run: npm install --save-dev jest
-    - run: npm test
+    - run: npm run test
