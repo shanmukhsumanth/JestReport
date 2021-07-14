@@ -1,4 +1,4 @@
-import { add } from './index';
+const add = require('./index.js');
 
 // add test suit
 describe( 'add() tests', () => {
