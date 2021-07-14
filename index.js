@@ -1,9 +1,12 @@
-var http = require('http');
- 
-// create a server listening on 8087
-http.createServer(function (req, res) {
-    // write the response and send it to the client
-    res.writeHead(200, {'Content-Type': 'text/html'}); 
-    res.write('Node.js says hello!');
-    res.end();
-}).listen(8087);
+const async = require('async');
+async.map(
+    [1,2,3],
+    function(val, callback){
+        // loop callbacks
+        setTimeout(function(){
+            callback(null, val * val);
+        }, 1000);
+    }, function(err, Tarr){
+        // final callback
+    }
+)
