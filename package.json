@@ -9,7 +9,7 @@
   },
   "jest": {
     "verbose": true,    
-    "testRegex": "\\.jsx?$"
+    "testRegex": "\\.test\\.jsx?$"
   },
   "repository": {
     "type": "git",
