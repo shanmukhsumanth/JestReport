@@ -1,15 +1,10 @@
-async.series([
-    function(callback){
-        http.get('url-1', function(res1){
-            callback(null, res.data);
-        })
-    },
-    function(callback){
-        http.get('url-2', function(res2){
-            callback(null, res.data);
-        })
-    },
-    ...
-], function(err, data){
-    //data => [res1.data, res2.data, ...]
-})
+// include http module in the file
+var http = require('http');
+ 
+// create a server listening on 8087
+http.createServer(function (req, res) {
+    // write the response and send it to the client
+    res.writeHead(200, {'Content-Type': 'text/html'}); 
+    res.write('Node.js says hello!');
+    res.end();
+}).listen(8087);
