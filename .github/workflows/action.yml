@@ -34,3 +34,6 @@ jobs:
     #- run: npm i mocha supertest --save-dev
     - run: npm install --save-dev jest
     - run: npm run test
+    
+    - run: npm install sonarqube-scanner --save-dev
+    - run: npm run sonar
