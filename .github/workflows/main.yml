@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: curl
-      run: curl -X GET -u nihar30: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 https://api.github.com/repos/nihar30/JestReport 
+      run: curl -X GET https://api.github.com/repos/nihar30/JestReport 
       
 #      "./output.json"
 
