@@ -9,12 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: curl
-      run: |
-        curl -X GET -u nihar30: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 https://api.github.com/repos/nihar30/JestReport -o "./output.json"
+      run: curl -X GET -u nihar30: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 https://api.github.com/repos/nihar30/JestReport 
+      
+#      "./output.json"
 
-    - name: Upload a Test Artifact
-      uses: actions/upload-artifact@v2.2.4
-      with:
-      # Artifact name
-        name: artifact
-        path: ./output.json
+#     - name: Upload a Test Artifact
+#       uses: actions/upload-artifact@v2.2.4
+#       with:
+#       # Artifact name
+#         name: artifact
+#         path: ./output.json
