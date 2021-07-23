@@ -1,0 +1,20 @@
+name: ASP.NET CI
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      run: |
+        curl -X GET -u sandeeprampur1987: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 https://api.github.com/repos/sandeeprampur1987/action-framework/pulls?state=open -o "./output.json"
+
+    - name: Upload a Test Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+      # Artifact name
+        name: artifact
+        path: ./output.json
