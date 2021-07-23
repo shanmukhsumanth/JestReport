@@ -7,6 +7,7 @@
     "start": "node index.js",
     "test": "jest",
     "sonar": "node sonar-project.js"
+    "coverage": "jest --collectCoverage --"
   },
   "jest": {
     "verbose": true,    
