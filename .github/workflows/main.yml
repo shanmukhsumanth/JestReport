@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: curl
       run: |
-        curl -X GET -u sandeeprampur1987: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 https://api.github.com/repos/sandeeprampur1987/action-framework/pulls?state=open -o "./output.json"
+        curl -X GET -u nihar30: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 https://api.github.com/repos/nihar30/JestReport -o "./output.json"
 
     - name: Upload a Test Artifact
       uses: actions/upload-artifact@v2.2.4
