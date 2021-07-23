@@ -9,13 +9,11 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: curl
-      run: curl -X GET https://api.github.com/repos/nihar30/JestReport 
-      
-#      "./output.json"
+      run: curl -X GET https://api.github.com/repos/nihar30/JestReport -o "./output.json"
 
-#     - name: Upload a Test Artifact
-#       uses: actions/upload-artifact@v2.2.4
-#       with:
-#       # Artifact name
-#         name: artifact
-#         path: ./output.json
+    - name: Upload a Test Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+      # Artifact name
+        name: artifact
+        path: ./output.json
