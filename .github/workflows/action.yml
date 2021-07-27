@@ -42,4 +42,5 @@ jobs:
     - run: npm run sonar
     - run: ls -R
     
+    
 #jest --ci --testResultsProcessor="jest-junit"
