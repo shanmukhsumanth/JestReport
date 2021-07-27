@@ -5,13 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest",
+    "test1": "jest",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest",
     "sonar": "node sonar-project.js",
     "coverage": "jest --collectCoverage --"
   },
   "jest": {
     "verbose": true,    
-    "testRegex": "\\.test\\.jsx?$"
+    "testRegex": "\\.test\\.jsx?$",
+    "coverageReporters": [
+      "text"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "output": "output/coverage/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "repository": {
     "type": "git",
