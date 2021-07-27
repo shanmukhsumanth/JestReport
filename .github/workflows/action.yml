@@ -33,7 +33,8 @@ jobs:
     - run: npm i express
     #- run: npm i mocha supertest --save-dev
     - run: npm install --save-dev jest
-#     - run: npm run test
+    - run: npm install --save-dev jest-junit
+    - run: npm run test
     - run: ls -R     
     - run: npm run coverage
     
@@ -41,11 +42,11 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
           name: CoverageReport
-          path: ./node_modules/@jest/reporters/build/*.js 
+          path: ./junit.xml
+    
     
     - run: npm install sonarqube-scanner --save-dev
     - run: npm run sonar
-   
-    
+    - run: ls -R
     
 #jest --ci --testResultsProcessor="jest-junit"
