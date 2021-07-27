@@ -36,7 +36,15 @@ jobs:
     - run: npm install --save-dev jest-junit
     - run: npm run test
     - run: ls -R     
- #   - run: npm run coverage
+    - run: npm run coverage
+    
+    - name: 'Publish code coverage results'
+      uses: actions/upload-artifact@v2.2.3
+      with:
+          name: CoverageReport
+          path: output/coverage/junit/junit.xml
+    
+    
     - run: npm install sonarqube-scanner --save-dev
     - run: npm run sonar
     - run: ls -R
