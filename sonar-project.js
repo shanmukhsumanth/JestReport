@@ -5,6 +5,6 @@ sonarqubeScanner({
        options : {
        'sonar.sources': '.',
        'sonar.inclusions' : '**',
-       'sonar.coverageReportPaths' : './Junit.xml'
+//        'sonar.coverageReportPaths' : './Junit.xml'
        },
 }, () => {});
