@@ -42,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
           name: CoverageReport
-          path: output/coverage/junit/junit.xml
+          path: ./junit.xml
     
     
     - run: npm install sonarqube-scanner --save-dev
