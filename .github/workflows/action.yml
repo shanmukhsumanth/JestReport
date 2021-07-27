@@ -35,10 +35,11 @@ jobs:
     - run: npm install --save-dev jest
 #     - run: npm run test
     - run: ls -R
-    - name: Run Jest
-      uses: stefanoeb/jest-action@1.0.3
+    
+      
     - run: npm run coverage
     - run: npm install sonarqube-scanner --save-dev
     - run: npm run sonar
     - run: ls -R
     
+#jest --ci --testResultsProcessor="jest-junit"
