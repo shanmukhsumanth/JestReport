@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "sonar": "node sonar-project.js",
+    "sonar": "node sonar-project.properties",
     "coverage": "jest --collectCoverage --"
   },
   "jest": {
