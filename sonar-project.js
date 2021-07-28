@@ -6,7 +6,7 @@ sonarqubeScanner({
        'sonar.sources': '.',
         'sonar.tests' : '.' ,
        'sonar.inclusions' : '**',
-       'sonar.test.inclusions': './*.test.js','./*.test.jsx'
+       'sonar.test.inclusions': './*.test.js','./*.test.jsx',
 
 //        'sonar.coverageReportPaths' : './Junit.xml'
        },
