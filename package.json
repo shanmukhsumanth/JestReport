@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest",
+    "test": "jest  --coverage",
     "sonar": "node sonar-project.properties",
     "coverage": "jest --collectCoverage --"
   },
   "jest": {
     "verbose": true, 
     "collectCoverage": true,
-    "testResultsProcessor": "jest-sonar-reporter"
+    "testResultsProcessor": "jest-sonar-reporter",
     "testRegex": "\\.test\\.jsx?$"
   },
   "repository": {
